@@ -15,9 +15,11 @@ public class PlayerPhysic : MonoBehaviour
     {
         if (other.CompareTag("Candy"))
         {
+            SoundCaller.instance.GetCandySound();
             other.GetComponent<CandyScore>().UpdateValue();
         }
         if (other.CompareTag("Wall")) {
+            SoundCaller.instance.HitWallSound();
             if (playerController.goLeft) {
                 playerController.goLeft = false;
                 if(pics != null) pics.GenerateRandomPicsBySide(Side.Right);
@@ -33,6 +35,7 @@ public class PlayerPhysic : MonoBehaviour
         }
         if (other.CompareTag("Spike"))
         {
+            SoundCaller.instance.DeathSound();
             Debug.Log("death");
         }
     }
