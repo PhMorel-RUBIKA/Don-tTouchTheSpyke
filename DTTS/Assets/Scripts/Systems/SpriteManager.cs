@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SpriteManager : MonoBehaviour {
     [SerializeField] private List<SpriteClass> spritelist = new List<SpriteClass>();
-
+    
 }
 
 [System.Serializable]
