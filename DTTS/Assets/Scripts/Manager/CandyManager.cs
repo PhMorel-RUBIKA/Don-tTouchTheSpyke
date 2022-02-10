@@ -4,8 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class CandyManager : MonoBehaviour
-{
+public class CandyManager : MonoBehaviour {
+    public static CandyManager instance = null;
+    
+    private void Awake() {
+        if (instance == null) instance = this;
+    }
+    
     //COMPONENT
     [SerializeField] public List<GameObject> leftCandySpawnPoint;
     [SerializeField] public List<GameObject> rightCandySpawnPoint;
@@ -19,18 +24,19 @@ public class CandyManager : MonoBehaviour
 
     private void Start()
     {   
-        GenerateRandomCandy(direction);
+        GenerateRandomCandy(Side.Right);
     }
 
 
-    void GenerateRandomCandy(bool left)
-    {
-        switch (left)
+    public void GenerateRandomCandy(Side side) {
+        if (debugObject.Count >= numberOfCandyToActivate) return;
+        
+        switch (side)
         {
-            case true:
+            case Side.Left:
                 ActivateRandomCandy(numberOfCandyToActivate, leftCandySpawnPoint);
                 break;
-            case false:
+            case Side.Right:
                 ActivateRandomCandy(numberOfCandyToActivate, rightCandySpawnPoint);
                 break;
         }
@@ -52,5 +58,13 @@ public class CandyManager : MonoBehaviour
             candyAct.GetComponent<CandyScore>().activate = true;
             Debug.Log("ici");
         }
+    }
+
+    /// <summary>
+    /// Remove a candy
+    /// </summary>
+    /// <param name="candy"></param>
+    public void RemoveCandy(GameObject candy) {
+        debugObject.Remove(candy);
     }
 }

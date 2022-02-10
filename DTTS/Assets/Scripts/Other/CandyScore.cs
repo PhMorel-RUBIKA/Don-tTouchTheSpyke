@@ -7,7 +7,7 @@ using UnityEngine.WSA;
 
 public class CandyScore : MonoBehaviour
 {
-    [SerializeField] private int score;
+    [SerializeField] private int ressource;
     [SerializeField] public bool activate;
     
     //PRIVATE
@@ -38,10 +38,10 @@ public class CandyScore : MonoBehaviour
         }
     }
 
-    public void UpdateValue(int numberToAdd)
-    {
-        //Insert Sprite Swap 
-        score += numberToAdd;
+    public void UpdateValue() {
+        ResourceManager.instance.resources += ressource;
+        CandyManager.instance.RemoveCandy(this.gameObject);
+        activate = false;
     }
 
 }
