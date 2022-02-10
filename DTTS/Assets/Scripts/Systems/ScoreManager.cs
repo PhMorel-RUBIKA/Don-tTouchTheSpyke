@@ -22,7 +22,7 @@ public class ScoreManager : MonoBehaviour
         visibleScore = 0;
         highScore = PlayerPrefs.GetInt("score");
         highScoreText.text = highScore.ToString();
-        //StartCoroutine(WaitandDebug());
+        StartCoroutine(WaitandDebug());
     }
 
     public void IncreaseScore(int value)
@@ -32,8 +32,7 @@ public class ScoreManager : MonoBehaviour
         if (visibleScore > highScore) highScore = visibleScore;
     }
 
-    public void EndGame()
-    {
+    public void EndGame() {
         highScores.Add(visibleScore);
         visibleScore = 0;
         foreach (int oldScore in rankedScores)
@@ -53,9 +52,6 @@ public class ScoreManager : MonoBehaviour
         highScore = rankedScores[0];
 
         highScores.Clear();
-        
-        Debug.Log(leaderBoard.text);
-        //StartCoroutine(WaitandDebug());
     }
 
     IEnumerator WaitandDebug()
