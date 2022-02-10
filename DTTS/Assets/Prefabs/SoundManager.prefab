@@ -47,14 +47,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volumeSound: 0
   soundAudioSource: {fileID: 2057754039042518619}
-  deathSound: {fileID: 0}
-  jumpSound: {fileID: 0}
-  hitWallSound: {fileID: 0}
-  getCandySound: {fileID: 0}
-  buttonUISound: {fileID: 0}
-  unlockCharacterSound: {fileID: 0}
-  winDuelUISound: {fileID: 0}
-  cantSelectSound: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: 1e7578c3ba56bd046a60f2e02adb929c, type: 3}
+  jumpSound: {fileID: 8300000, guid: 8a55db9307f31404f9eb49f84cb29955, type: 3}
+  hitWallSound: {fileID: 8300000, guid: f3c79952c0decfd43b153e592d154ddf, type: 3}
+  getCandySound: {fileID: 8300000, guid: 2febd43ce10892a408fa2ebb371191fa, type: 3}
+  buttonUISound: {fileID: 8300000, guid: 7530dc83552e48b41b3a3389ceea5e27, type: 3}
+  unlockCharacterSound: {fileID: 8300000, guid: c497cf84b68d79741a994561cbb66cff, type: 3}
+  winDuelUISound: {fileID: 8300000, guid: 724f6d694a44be24390c9845448ec28a, type: 3}
+  cantSelectSound: {fileID: 8300000, guid: 0fd443c04b9e54641874b35015f919cc, type: 3}
 --- !u!82 &2057754039042518619
 AudioSource:
   m_ObjectHideFlags: 0

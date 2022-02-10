@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour {
        jumpTimer += Time.deltaTime;
        if (CheckJumpTime() && inputJump) {
            inJump = true;
+           SoundCaller.instance.JumpSound();
            jumpTimer = 0;
        }
        if(inJump) CheckSpeedJumpTime();
@@ -54,6 +55,7 @@ public class PlayerController : MonoBehaviour {
 
    private void FixedUpdate()
    {
+       
        if (inJump)
        {
            moveDownVelocity = Vector2.zero;

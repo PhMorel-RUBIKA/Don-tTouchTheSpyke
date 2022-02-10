@@ -696,38 +696,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2057754039042518596, guid: e6a4bea04c1ec5a43a8ce03fb7f6bee0, type: 3}
-      propertyPath: jumpSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 8a55db9307f31404f9eb49f84cb29955, type: 3}
-    - target: {fileID: 2057754039042518596, guid: e6a4bea04c1ec5a43a8ce03fb7f6bee0, type: 3}
-      propertyPath: deathSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 1e7578c3ba56bd046a60f2e02adb929c, type: 3}
-    - target: {fileID: 2057754039042518596, guid: e6a4bea04c1ec5a43a8ce03fb7f6bee0, type: 3}
-      propertyPath: hitWallSound
-      value: 
-      objectReference: {fileID: 8300000, guid: f3c79952c0decfd43b153e592d154ddf, type: 3}
-    - target: {fileID: 2057754039042518596, guid: e6a4bea04c1ec5a43a8ce03fb7f6bee0, type: 3}
-      propertyPath: buttonUISound
-      value: 
-      objectReference: {fileID: 8300000, guid: 7530dc83552e48b41b3a3389ceea5e27, type: 3}
-    - target: {fileID: 2057754039042518596, guid: e6a4bea04c1ec5a43a8ce03fb7f6bee0, type: 3}
-      propertyPath: getCandySound
-      value: 
-      objectReference: {fileID: 8300000, guid: 2febd43ce10892a408fa2ebb371191fa, type: 3}
-    - target: {fileID: 2057754039042518596, guid: e6a4bea04c1ec5a43a8ce03fb7f6bee0, type: 3}
-      propertyPath: winDuelUISound
-      value: 
-      objectReference: {fileID: 8300000, guid: 724f6d694a44be24390c9845448ec28a, type: 3}
-    - target: {fileID: 2057754039042518596, guid: e6a4bea04c1ec5a43a8ce03fb7f6bee0, type: 3}
-      propertyPath: cantSelectSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 0fd443c04b9e54641874b35015f919cc, type: 3}
-    - target: {fileID: 2057754039042518596, guid: e6a4bea04c1ec5a43a8ce03fb7f6bee0, type: 3}
-      propertyPath: unlockCharacterSound
-      value: 
-      objectReference: {fileID: 8300000, guid: c497cf84b68d79741a994561cbb66cff, type: 3}
     - target: {fileID: 2057754039042518597, guid: e6a4bea04c1ec5a43a8ce03fb7f6bee0, type: 3}
       propertyPath: m_RootOrder
       value: 1
