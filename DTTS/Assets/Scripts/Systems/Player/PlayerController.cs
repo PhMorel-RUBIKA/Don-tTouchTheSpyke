@@ -3,8 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
+    [SerializeField]
+    private Animator menuAnimator;
 
+    public bool launchGame;
     private InputMaster mapping;
     //jump
    bool inputJump;
@@ -44,29 +48,49 @@ public class PlayerController : MonoBehaviour {
 
    private void Update()
    {
-       jumpTimer += Time.deltaTime;
-       if (CheckJumpTime() && inputJump) {
-           inJump = true;
-           SoundCaller.instance.JumpSound();
-           jumpTimer = 0;
+       if (launchGame)
+       {
+           rb.gravityScale = 0.5f;
+                  jumpTimer += Time.deltaTime;
+                  if (CheckJumpTime() && inputJump) {
+                      inJump = true;
+                      SoundCaller.instance.JumpSound();
+                      jumpTimer = 0;
+                  }
+                  if(inJump) CheckSpeedJumpTime();
        }
-       if(inJump) CheckSpeedJumpTime();
+       else
+       {
+           rb.gravityScale = 0;
+           rb.velocity = Vector2.zero;
+           if (inputJump)
+           {
+               menuAnimator.Play("MainMenuAnim");
+           }
+       }
+
    }
 
    private void FixedUpdate()
    {
-       
-       if (inJump)
+       if (launchGame)
        {
-           moveDownVelocity = Vector2.zero;
-          Jump(); 
+             if (inJump)
+                  {
+                      moveDownVelocity = Vector2.zero;
+                     Jump(); 
+                  }
+                  else
+                      MoveDown();
+                  
+                   Move();
+                   UpdateVelocity();
        }
-       else
-           MoveDown();
        
-        Move();
-        UpdateVelocity();
+     
     }
+
+ 
 
     void Move()
     {

@@ -1,12 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SoundCaller : MonoBehaviour
 {
     public static SoundCaller instance;
     public float volumeSound;
     public AudioSource soundAudioSource;
+
+    public Sprite isMuteSprite;
+    public Sprite isOnSprite;
+    public Image soundButton;
 
     [Header("AudioClip")] 
     public AudioClip deathSound;
@@ -17,11 +23,18 @@ public class SoundCaller : MonoBehaviour
     public AudioClip unlockCharacterSound;
     public AudioClip winDuelUISound;
     public AudioClip cantSelectSound;
+
+    private bool isMute; 
     
     
     private void Awake()
     {
         if (instance == null) instance = this;
+    }
+
+    private void Start()
+    {
+        isMute = false;
     }
 
     public void DeathSound()
@@ -63,6 +76,22 @@ public class SoundCaller : MonoBehaviour
     {
         soundAudioSource.PlayOneShot(cantSelectSound);
     }
-    
-    
+
+    public void SoundChange()
+    {
+        Debug.Log("Appuye sur le bouton");
+        switch (isMute)
+        {
+            case true:
+                isMute = false;
+                soundAudioSource.volume = 1;
+                soundButton.sprite = isMuteSprite;
+                break;
+            case false:
+                isMute = true;
+                soundAudioSource.volume = 0;
+                soundButton.sprite = isOnSprite;
+                break;
+        }
+    }
 }

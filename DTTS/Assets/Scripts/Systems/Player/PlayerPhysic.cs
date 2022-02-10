@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.U2D;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerPhysic : MonoBehaviour
 {
@@ -37,6 +38,7 @@ public class PlayerPhysic : MonoBehaviour
         {
             SoundCaller.instance.DeathSound();
             Debug.Log("death");
+            SceneManager.LoadScene(0);
         }
     }
 }
