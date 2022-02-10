@@ -3,8 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-public class PlayerController : MonoBehaviour
-{
+public class PlayerController : MonoBehaviour {
+
+    private InputMaster mapping;
     //jump
    bool inputJump;
     bool inJump;
@@ -34,10 +35,20 @@ public class PlayerController : MonoBehaviour
    [SerializeField]
    Rigidbody2D rb;
 
+   private void Awake() {
+       mapping = new InputMaster();
+       mapping.MainPlayer.Enable();
+       mapping.MainPlayer.Jump.started += DetectInput;
+       mapping.MainPlayer.Jump.canceled += DetectInput;
+   }
+
    private void Update()
    {
-       if (inputJump && CheckJumpTime())
+       jumpTimer += Time.deltaTime;
+       if (CheckJumpTime() && inputJump) {
            inJump = true;
+           jumpTimer = 0;
+       }
        if(inJump) CheckSpeedJumpTime();
    }
 
@@ -67,8 +78,7 @@ public class PlayerController : MonoBehaviour
     void MoveDown()
     {
         float finalSpeedDown;
-        finalSpeedDown = moveDownVelocity.y+speedMoveDown;
-        moveDownVelocity += Vector2.down * finalSpeedDown;
+        moveDownVelocity += Vector2.down * speedMoveDown;
         currentVelocity += moveDownVelocity;
     }
     void UpdateVelocity()
@@ -77,18 +87,9 @@ public class PlayerController : MonoBehaviour
         currentVelocity = Vector2.zero;
     }
     
-    bool CheckJumpTime()
-   {
-       if (jumpTime >= jumpTimer)
-       {
-           jumpTimer += Time.deltaTime;
-           return false;
-       }
-       jumpTimer = 0;
-       return true;
-   }
+    bool CheckJumpTime() => jumpTimer >= jumpTime;
 
-    void CheckSpeedJumpTime()
+        void CheckSpeedJumpTime()
     {
          if (speedJumpTime >= speedJumpTimer)
                {
@@ -109,10 +110,9 @@ public class PlayerController : MonoBehaviour
        Vector2 velocityJump = Vector2.up*finalSpeedJump;
        currentVelocity += velocityJump;
    }
-   
-    public void DetectInput(InputAction.CallbackContext callbackContext)
-    {
-        inputJump = callbackContext.ReadValueAsButton();
-        
-    }
+
+   private void DetectInput(InputAction.CallbackContext callbackContext) {
+       Debug.Log("ok");
+       inputJump = callbackContext.ReadValueAsButton();
+   }
 }
