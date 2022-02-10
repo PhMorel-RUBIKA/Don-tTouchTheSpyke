@@ -12,6 +12,10 @@ public class PicsGeneration : MonoBehaviour {
     [SerializeField] private int score = 0;
     [SerializeField] private int maxScoreForMaxPics = 100;
 
+    private void Start() {   
+        GenerateRandomPicsBySide(Side.Right);
+    }
+    
     /// <summary>
     /// Generate random pics on the left
     /// </summary>

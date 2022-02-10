@@ -21,7 +21,7 @@ public class ScoreManager : MonoBehaviour
     public void IncreaseScore(int value)
     {
         visibleScore += value;
-        textScore.text = visibleScore.ToString();
+        if(textScore != null) textScore.text = visibleScore.ToString();
         if (visibleScore > highScore) highScore = visibleScore;
     }
 
