@@ -1967,6 +1967,8 @@ GameObject:
   m_Component:
   - component: {fileID: 213352940}
   - component: {fileID: 213352941}
+  - component: {fileID: 213352943}
+  - component: {fileID: 213352942}
   m_Layer: 5
   m_Name: -- Boutique
   m_TagString: Untagged
@@ -1985,14 +1987,16 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 761232682}
+  - {fileID: 889516917}
   m_Father: {fileID: 93895648}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &213352941
 CanvasGroup:
@@ -2006,6 +2010,44 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &213352942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213352939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.27450982}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7482667652216324306, guid: e30525f37671572499d1ed1ffb6a12e4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &213352943
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213352939}
+  m_CullTransparentMesh: 1
 --- !u!1 &216046237
 GameObject:
   m_ObjectHideFlags: 0
@@ -5286,6 +5328,141 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 226feca7173aa52438426b8c1878e92c, type: 3}
+--- !u!1 &761232681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 761232682}
+  - component: {fileID: 761232684}
+  - component: {fileID: 761232683}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &761232682
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761232681}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 213352940}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -72.08502}
+  m_SizeDelta: {x: 0, y: 144.17}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &761232683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761232681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Birds shop
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 979cff0557ffd8747919d73c79cb9f1a, type: 2}
+  m_sharedMaterial: {fileID: -9130875508165449654, guid: 979cff0557ffd8747919d73c79cb9f1a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 100
+  m_fontSizeBase: 100
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &761232684
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761232681}
+  m_CullTransparentMesh: 1
 --- !u!1 &765607099
 GameObject:
   m_ObjectHideFlags: 0
@@ -7121,6 +7298,67 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &889516916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 889516917}
+  - component: {fileID: 889516918}
+  m_Layer: 5
+  m_Name: Shop_Layout
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &889516917
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889516916}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 213352940}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.000061035156, y: -72.08502}
+  m_SizeDelta: {x: 0, y: -144.17}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &889516918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889516916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 1
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 600, y: 150}
+  m_Spacing: {x: 50, y: 50}
+  m_Constraint: 1
+  m_ConstraintCount: 2
 --- !u!1 &904047566
 GameObject:
   m_ObjectHideFlags: 0
@@ -9237,55 +9475,201 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65f6a20802ea78147b79de5267b1a562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spritelist:
+  spriteList:
   - name: Basic
-    sprite: {fileID: 21300000, guid: d9ef023bd0ae46540a00154c5ff7eeda, type: 3}
+    sprite: {fileID: 21300000, guid: a379b704b7235264ca8b00f7cd7cc8a4, type: 3}
     cost: 0
     unlocked: 1
-  - name: Naruto
-    sprite: {fileID: 21300000, guid: 0c3154e60acbbb8458649b957ee9b807, type: 3}
-    cost: 0
-    unlocked: 0
-  - name: GameBoy
-    sprite: {fileID: 21300000, guid: 83b43f2baefee2845b4a694e1cb0eb96, type: 3}
-    cost: 0
-    unlocked: 0
-  - name: Minion
-    sprite: {fileID: 21300000, guid: 5bb94916b93f6a049b21491701b05e47, type: 3}
-    cost: 0
-    unlocked: 0
-  - name: Mario
-    sprite: {fileID: 21300000, guid: e7961186878cfdb4090ee2ff3102e180, type: 3}
-    cost: 0
-    unlocked: 0
-  - name: Militaire
-    sprite: {fileID: 21300000, guid: b68dec04504709e43a3d976784329244, type: 3}
-    cost: 0
-    unlocked: 0
-  - name: Classe
+  - name: Ninja 01
     sprite: {fileID: 21300000, guid: 99953a98714e65445b88ea4545e325d0, type: 3}
-    cost: 0
+    cost: 10
     unlocked: 0
-  - name: Ninja
+  - name: Ninja 02
     sprite: {fileID: 21300000, guid: 0177ae528d99ea34db6c8a126d5ef6b9, type: 3}
-    cost: 0
+    cost: 10
+    unlocked: 0
+  - name: Ninja 03
+    sprite: {fileID: 21300000, guid: be2eac546bc4ee74e861955b430951c3, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Ninja 04
+    sprite: {fileID: 21300000, guid: 6028632cec6eb624e953e9d7f0ba7ae6, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Ninja 05
+    sprite: {fileID: 21300000, guid: 438eb30597dd2eb4abf97740da4b776f, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Ninja 06
+    sprite: {fileID: 21300000, guid: 2280073921ed0dc4ca842df8329ce0c1, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Ninja 07
+    sprite: {fileID: 21300000, guid: 41f6196bac2a2694f8f746309bbce255, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Ninja 08
+    sprite: {fileID: 21300000, guid: 62b75e055da4a5943a47be267051cd84, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Ninja 09
+    sprite: {fileID: 21300000, guid: b18589fc5c5ef1e45a9c87b60f13f64f, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Ninja 10
+    sprite: {fileID: 21300000, guid: 99bb3c2367c24004d92bc488945466d3, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Ninja 11
+    sprite: {fileID: 21300000, guid: a2e3ad53a21574349bb4b19095367d98, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Ninja 12
+    sprite: {fileID: 21300000, guid: 5e519e078a6493246ba25dc0dfa17b2f, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Ninja 13
+    sprite: {fileID: 21300000, guid: 59b6aefe743c7ed4798b570f24044e6a, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: NINJA
+    sprite: {fileID: 21300000, guid: af4c0f9fad07e414db320d87f6e1e139, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Gregoire
+    sprite: {fileID: 21300000, guid: 96b9ae2f47f6d6847828b9cae8b37b6a, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Sarah B
+    sprite: {fileID: 21300000, guid: 3d609eeb88f21b545b3b2e260e7b09cb, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Sarah S
+    sprite: {fileID: 21300000, guid: 2cc7055f5ec881a4b89e6ebb5b34acc8, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Victor
+    sprite: {fileID: 21300000, guid: 575f2fe66070c5e4787ef5281f55999b, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: ajnin
+    sprite: {fileID: 21300000, guid: b43d626804551d340aae627a0e1ba2f4, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Bird
+    sprite: {fileID: 21300000, guid: f33d90597455b6d4e813b364c0d81e66, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Black&White
+    sprite: {fileID: 21300000, guid: 4a0e1167de9755c4285a975d53e6b1e0, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Color Invert
+    sprite: {fileID: 21300000, guid: 20212fa9ad3d7914e855221a69d185eb, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Cute
+    sprite: {fileID: 21300000, guid: 5bb94916b93f6a049b21491701b05e47, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Covid
+    sprite: {fileID: 21300000, guid: 0a92912fd61c342469098540a6d1c344, type: 3}
+    cost: 10
     unlocked: 0
   - name: Cyclope
     sprite: {fileID: 21300000, guid: c400e75aa5547e24c8dce78e98fb1292, type: 3}
-    cost: 0
+    cost: 10
     unlocked: 0
-  - name: Greg
-    sprite: {fileID: 21300000, guid: 96b9ae2f47f6d6847828b9cae8b37b6a, type: 3}
-    cost: 0
-    unlocked: 0
-  - name: LGBT
-    sprite: {fileID: 21300000, guid: d39f16d96bd8a5d4caadb89a3de73aab, type: 3}
-    cost: 0
-    unlocked: 0
-  - name: Double Ninja
+  - name: double ninja
     sprite: {fileID: 21300000, guid: dff879885a6a0ad4e92052e5189ec485, type: 3}
-    cost: 0
+    cost: 10
     unlocked: 0
+  - name: Fish
+    sprite: {fileID: 21300000, guid: 5eff73bcc83750d499d05c40ae3f3916, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Fox
+    sprite: {fileID: 21300000, guid: 1c3fe049aabdc9b4bacb965890412d9d, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: GameBoy
+    sprite: {fileID: 21300000, guid: 83b43f2baefee2845b4a694e1cb0eb96, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Gift
+    sprite: {fileID: 21300000, guid: 3bc1db1385f949849bca0882d7440c43, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Invisble
+    sprite: {fileID: 21300000, guid: bc78007829627b347aca8884a75f5f00, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Juice
+    sprite: {fileID: 21300000, guid: a0c43168e17eacd43a1ee4a1c3137a8d, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: King
+    sprite: {fileID: 21300000, guid: caafbdf2d3adc9f47b73c8ecb08469c9, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Kung fu
+    sprite: {fileID: 21300000, guid: db71f9478591fb240829e77264cac3ce, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: lgbt
+    sprite: {fileID: 21300000, guid: d39f16d96bd8a5d4caadb89a3de73aab, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Mario
+    sprite: {fileID: 21300000, guid: e7961186878cfdb4090ee2ff3102e180, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: M&S vibe
+    sprite: {fileID: 21300000, guid: 143c3b7d0c79a124ea2a287a1f7fb9a6, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Naruto
+    sprite: {fileID: 21300000, guid: 0c3154e60acbbb8458649b957ee9b807, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Nothing
+    sprite: {fileID: 21300000, guid: 373fc549149604041b45f2d048ec0370, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Pirate
+    sprite: {fileID: 21300000, guid: 1add96db49fde3045b3b30634b235631, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Pixel
+    sprite: {fileID: 21300000, guid: d21228abf2e36494fa5f9280ce7cf6f6, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Real Ninja
+    sprite: {fileID: 21300000, guid: 0e5255b569f01d14ba68ddd6949c630b, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Saturation
+    sprite: {fileID: 21300000, guid: be76c6acc6b92064180c4ab912935e45, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: "S\xE9duisant"
+    sprite: {fileID: 21300000, guid: 18f0029e5ad99df43a72611b95904c4b, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Shrek
+    sprite: {fileID: 21300000, guid: 90e7de1c582cf2c498c6de91299e8b88, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Soldier
+    sprite: {fileID: 21300000, guid: b68dec04504709e43a3d976784329244, type: 3}
+    cost: 10
+    unlocked: 0
+  - name: Sus
+    sprite: {fileID: 21300000, guid: af7768aa157342645bf4da8a108daea1, type: 3}
+    cost: 10
+    unlocked: 0
+  birdsLayoutGam: {fileID: 7122640481188723270, guid: c90d2e0ee8b645d48bf2bd956ffc8edf, type: 3}
+  birdsLayoutTrans: {fileID: 889516917}
 --- !u!1 &1239534875
 GameObject:
   m_ObjectHideFlags: 0
@@ -9746,7 +10130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1301296686
 RectTransform:
   m_ObjectHideFlags: 0

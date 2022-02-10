@@ -4,8 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpriteManager : MonoBehaviour {
-    [SerializeField] private List<SpriteClass> spritelist = new List<SpriteClass>();
-    
+    [SerializeField] private List<SpriteClass> spriteList = new List<SpriteClass>();
+    [SerializeField] private GameObject birdsLayoutGam = null;
+    [SerializeField] private Transform birdsLayoutTrans = null;
+    private void Start() => CreateBirdsSpriteShop();
+
+    /// <summary>
+    /// Create birds sprite
+    /// </summary>
+    private void CreateBirdsSpriteShop() {
+        for (int i = 0; i < spriteList.Count; i++) {
+            GameObject bird = Instantiate(birdsLayoutGam, birdsLayoutTrans);
+            bird.GetComponent<SpriteGroupData>().UpdateData(spriteList[i].Sprite, spriteList[i].Name, spriteList[i].Cost.ToString(), i);
+        }
+    }
 }
 
 [System.Serializable]
