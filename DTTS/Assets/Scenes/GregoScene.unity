@@ -310,7 +310,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2046813113}
         m_TargetAssemblyTypeName: SoundCaller, Assembly-CSharp
-        m_MethodName: WinDuelUISound
+        m_MethodName: CantSelectSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -720,6 +720,10 @@ PrefabInstance:
       propertyPath: winDuelUISound
       value: 
       objectReference: {fileID: 8300000, guid: 724f6d694a44be24390c9845448ec28a, type: 3}
+    - target: {fileID: 2057754039042518596, guid: e6a4bea04c1ec5a43a8ce03fb7f6bee0, type: 3}
+      propertyPath: cantSelectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0fd443c04b9e54641874b35015f919cc, type: 3}
     - target: {fileID: 2057754039042518596, guid: e6a4bea04c1ec5a43a8ce03fb7f6bee0, type: 3}
       propertyPath: unlockCharacterSound
       value: 
